@@ -1,27 +1,26 @@
 {
-  "name": "hackcss",
+  "name": "Llama Studios",
   "version": "0.0.1",
-  "description": "A quick and lean CSS add-on framework for hackathoners who are beginners to CSS.",
+  "description": "A one of a kind development agency, run by a team of majestic of llamas. Get in touch.",
   "main": "index.js",
   "scripts": {
     "test": "gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brh55/HackCSS.git"
+    "url": "git+https://github.com/brh55/Llama-Studios.git"
   },
   "keywords": [
-    "CSS",
-    "Hackathons",
-    "Beginner",
-    "Friendly"
+    "HTML5",
+    "POSTcss",
+    "Llamas"
   ],
   "author": "Branodn Him",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brh55/HackCSS/issues"
+    "url": "https://github.com/brh55/llama-studios/issues"
   },
-  "homepage": "https://github.com/brh55/HackCSS#readme",
+  "homepage": "https://github.com/brh55/Llama-Studios#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "cssnano": "^3.0.3",
