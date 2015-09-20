@@ -8,7 +8,7 @@ var precss		= require('precss');
 var rename		= require('gulp-rename');
 var reporter    = require('postcss-reporter');
 var stylelint   = require('stylelint');
-var browsersync = require('browser-sync')
+var browserSync = require('browser-sync')
 
 gulp.task('build', function () {
     var processors = [
@@ -27,7 +27,7 @@ gulp.task('build', function () {
             clearMessages: true
         })
     ];
-    return gulp.src('./src/*.css')
+    return gulp.src('src/*.css')
         .pipe(postcss(processors))
 	    .pipe(rename('styles.min.css'))
 	    .pipe(gulp.dest('www/css'));
@@ -35,7 +35,7 @@ gulp.task('build', function () {
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: 'www/dist/',
+        server: './www/',
         open: false
     });
     gulp.watch('src/css/**/*.css', ['css']);
