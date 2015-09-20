@@ -30,16 +30,16 @@ gulp.task('build', function () {
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))
 	    .pipe(rename('styles.min.css'))
-	    .pipe(gulp.dest('.www/css'));
+	    .pipe(gulp.dest('www/css'));
 });
 
 gulp.task('serve', function () {
-  browserSync.init({
-    server: 'www/dist/',
-    open: false
-  });
-  gulp.watch('src/css/**/*.css', ['css']);
-  gulp.watch('www/**/*.html').on('change', browserSync.reload);
+    browserSync.init({
+        server: 'www/dist/',
+        open: false
+    });
+    gulp.watch('src/css/**/*.css', ['css']);
+    gulp.watch('www/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);

@@ -1,5 +1,5 @@
 {
-  "name": "Llama Studios",
+  "name": "llama-studios",
   "version": "0.0.1",
   "description": "A one of a kind development agency, run by a team of majestic of llamas. Get in touch.",
   "main": "index.js",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/brh55/Llama-Studios#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.3",
     "cssnano": "^3.0.3",
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.0",
