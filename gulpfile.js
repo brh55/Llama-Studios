@@ -38,7 +38,7 @@ gulp.task('build', function () {
 gulp.task('serve', function () {
     browserSync.init({
         server: './www/',
-        open: false
+        open: true
     });
     gulp.watch('src/**/*.css', ['build']).on('change', browserSync.reload);
     gulp.watch('www/**/*.html').on('change', browserSync.reload);

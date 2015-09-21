@@ -7,4 +7,9 @@ First 'llama' tell you that if you've stumbled across this page in hopes to find
 ## Disclaimer
 Llamas in the photos were all treated under the fair treatments outlined by "Llama vs Buffalo" case.
 
-### Keep llama-ing on!
+## How to get things spinning
+1. clone this repo: `git clone https://github.com/brh55/Llama-Studios.git`
+2. run web server: `gulp`
+3. now your browser should have it up and running!
+
+### Keep llama-ing on! ![Llama on](http://orig05.deviantart.net/fee3/f/2010/094/f/d/llama_walk_by_taquito143.gif)
