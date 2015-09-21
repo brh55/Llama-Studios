@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+
+.hero {
+    height: 30%;
+    height: 30vw;
+    max-height: 1000px;
+    padding: 80px 0 200px;
+
+    background: url("../assets/imgs/llama-hs-lg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .green {
+        color: #3CB17D;
+    }
+    
+    .headlines {
+        
+        h2 {
+            color: #efefef;
+            line-height: 1.1;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #d8d6d6;
+            letter-spacing: .118em;
+        }
+    }
+}
+
+
+/* About us */
+.about-us {
+    background-color: $teal;
+    
+    .heading {
+        
+        h3 {
+            color: $cloud;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+        }
+        
+        li {
+            color: #395C63;
+        }
+    }
+
+    img {
+        height: 100%;
+        animation: levitate 3s ease infinite;
+        margin: 0 auto;
+    }
+    
+    .llama-wrap {
+        margin: 0 auto;
+        text-align: center;
+
+        .llama-shadow {
+            background: #4D6C71;
+            height: 9px;
+            width: 89px;
+            border-radius: 100%;
+            margin: 35px auto;
+            animation: shadow 3s ease infinite;
+        }
+    }
+}
+
+.clients {
+    background-color: $cloud;
+
+    h3 {
+        color: $main-orange;
+    }
+
+    li {
+        color: #656565
+    }
+}

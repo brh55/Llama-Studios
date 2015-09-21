@@ -8,12 +8,14 @@ var precss		= require('precss');
 var rename		= require('gulp-rename');
 var reporter    = require('postcss-reporter');
 var stylelint   = require('stylelint');
-var browserSync = require('browser-sync')
+var browserSync = require('browser-sync');
+var calc        = require('postcss-calc');
 
 gulp.task('build', function () {
     var processors = [
         precss(),
         pcssEach(),
+        calc(),
     	autoprefix(),
         cssnano(),
         stylelint({
@@ -38,7 +40,7 @@ gulp.task('serve', function () {
         server: './www/',
         open: false
     });
-    gulp.watch('src/css/**/*.css', ['css']);
+    gulp.watch('src/**/*.css', ['build']).on('change', browserSync.reload);
     gulp.watch('www/**/*.html').on('change', browserSync.reload);
 });
 

@@ -5,6 +5,13 @@
    ========================================================================== */
 
 @import "vendors/normalize.css";
-@import "base/_typography.css";
-@import "base/_grid.css";
-@import "base/_variables.css";
+@import "vendors/typeplate.css";
+
+@import "partials/_variables.css";
+@import "partials/_base.css";
+@import "partials/_animations.css";
+@import "partials/_mixins.css";
+@import "partials/_grid.css";
+@import "partials/_typography.css";
+
+@import "pages/_homepage.css";
