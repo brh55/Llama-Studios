@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Variables
+
+   Declare global variables here
+   ========================================================================== */
+
+/** Color Scheme **/
+$main-orange: #ff7f37;
+$main-blue: #0a6cff;
+$main-green: #a2cc1d;
+
+$dark-blue: #1956b2;
+$dark-green: #8cb210;
+
+$teal: #719DA5;
+$cloud: #efefef;
+
+$font-headings: 'Arimo', sans-serif;
+$font-paragraph: 'Pontano Sans', sans-serif;
+
+/* Sizing */
+$base: 10px;

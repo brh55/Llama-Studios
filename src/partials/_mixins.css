@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Mixins Declarations
+
+   Applying DRY, where it's too wet.
+   ========================================================================== */
+
+
+@define-mixin colSet $1st-width, $2nd-width {
+	&-$(1st-width)-$(2nd-width) {
+		display: flex;
+		
+		.col {
+			width: $(2nd-width)%;
+		
+		+.col {
+				width: $(1st-width)%;
+			}
+		}
+	}
+}

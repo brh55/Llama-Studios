@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Typography
+
+   Adjustments on top of typeplate
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700|Pontano+Sans);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-headings;
+}
+
+p,
+li,
+span {
+	font-family: $font-paragraph;
+}
