@@ -12,8 +12,30 @@
 		.col {
 			width: $(2nd-width)%;
 		
-		+.col {
+			+.col {
 				width: $(1st-width)%;
+			}
+		}
+	}
+}
+
+@define-mixin quickSet $1st-width, $2nd-width {
+	&-$(1st-width)-$(2nd-width) {
+		@mixin-content;
+	}
+}
+
+@define-mixin set100 $1st-width, $2nd-width {
+	&-$(1st-width)-$(2nd-width) {
+		display: block;
+		
+		.col {
+			display: block;
+			width: 100%;
+		
+			+.col {
+				display: block;
+				width: 100%;
 			}
 		}
 	}

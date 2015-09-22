@@ -31,15 +31,33 @@
 	@mixin colSet 20, 80;
 }
 
-/* Experimental, but handy for more precise */
+/* Experimental, but handy for more precision */
 @for $i from 100 to 10 by 20 {
-	.col-$(i)-$($temp-$(i)) {
+	.col-$(i) {
 		> .col {
 			width: $i%;
+			
+			+.col {
+				width: calc(100 - $i)%;
+			}
 		}
+	}
+}
 
-		>.col {
-			width: calc(100 - $i)%;
-		}
+/* 
+   Media Queries
+   ========================================================================== */
+
+@custom-media --small-viewport (max-width: 640px);
+@custom-media --large-viewport (min-width: 1200px);
+
+@media (--small-viewport) {
+	.col {
+		@mixin set100 70, 30;
+		@mixin set100 30, 70;
+		@mixin set100 60, 40;
+		@mixin set100 40, 60;
+		@mixin set100 80, 20;
+		@mixin set100 20, 80;
 	}
 }
