@@ -6,8 +6,14 @@
         <title>Llama Studios - Where we pride on being happy and awesome.</title>
         <meta name="description" content="The finest llama agency, dedicated to delivering excellent projects.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="icon" href="static-llama.ico" type="image/x-icon">
+        
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/vendors/instagram.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -16,26 +22,50 @@
         <section class="hero">
             <div class="wrapper">
 
-                <nav class="nav-wrapper">
-                    
+                <nav>
+                    <div class="row">
+                        <div class="col-30-70">
+                            <div class="col">
+                                <a href="index.html" class="logo">
+                                    <h1>Llama<img src="https://maxcdn.icons8.com/Color/PNG/48/Animals/llama-48.png" title="Llama" width="48">Studios</h1>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <button type="button">Menu</button>
+                                <ul>
+                                    <li><a href="#about-us">About</a></li>
+                                    <li><a href="#our-team">Team</a></li>
+                                    <li><a href="#clients">Clients</a></li>
+                                    <li><a href="#connect">Connect</a></li>
+                                </ul>
+                            </div>
 
+                        </div>
+
+                    </div>
                 </nav>
 
                 <div class="headlines">
+                    <h2 class="intro">
+                        We craft the most
+                    </h2>
                     <h2>
                         Majestic.<br>
-                        <span class="green">Brilliant.</span><br>
-                        Llama Approved.
+                        Llama Approved.<br>
+                        <span class="loud">Innovations.</span>
                     </h2>
-                    <p>We believe in giving the best to our clients.</p>
+                    <div class="hr-10"></div>
+                    <p>We believe in developing the<br>
+                    best experiences for all our clients.</p>
                 </div>
             </div>
         </section>
 
-        <section class="about-us padding">
+        <section class="about-us">
+            <div class="top-section slant--2"></div>
             <div class="wrapper">
                 <h3 class="heading">about the herd</h3>
-                <div class="col-30-70">
+                <div class="col-70-30">
                     <article class="col">
                         <ul>
                             <li>Your work will be fireproof as long as it's with us. We wrap it in our fibers.</li>
@@ -51,50 +81,140 @@
                     </article>
                 </div>
             </div>
-
-            <div class="wrapper">
-                <div class="col-50 team-numbers">
-
-                    <div class="col">
-                        
-                    </div>
-
-                    <div class="col">
-                        
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <section class="client">
-            <div></div>
+        <section class="our-team">
+            <div class="top-section slant--2"></div>
+                <div class="wrapper">
+                    <div class="heading">
+                        <h3>Our Team</h3>
+                    </div>
 
-        </section>
- 
-        <section class="clients padding">
-            <div class="wrapper">
-                <div class="heading">
-                    <h3>our clients</h3>
-                </div>
-                <div class="col-30-70">
-                    <article class="col">
-                        <ul>
-                            <li>Your work will be fireproof as long as it's with us. We wrap it in our fibers.</li>
-                            <li>While other agencies left overs may a stinkful, our's isnt.</li>
-                            <li>No cash? 'Hay'!, no literally 'hay', we love that stuff!</li>
-                        </ul>
-                    </article>
-                    <article class="col">
-                        <div class="llama-wrap">
-                            <img src="assets/imgs/llama-stand-porforever.gif" alt="A munching llama">
-                            <div class="llama-shadow"></div>
+                    <div class="team">
+                        <div class="member">
+                            <img src="assets/imgs/katie-llama.jpg" alt="Katie - Junior Developer">
+                            <div class="bio-info">
+                                <h4>Katie</h4>
+                                <p>Junior Developer</p>
+                            </div>
                         </div>
+
+                        <div class="member">
+                            <img src="assets/imgs/jerry-llama.jpg" alt="Jerry - Lead Developer">
+                            
+                            <div class="bio-info">
+                                <h4>Jerry</h4>
+                                <p>Lead Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <img src="assets/imgs/harry-llama.jpg" alt="Harry - Project Manager">
+                            
+                            <div class="bio-info">
+                                <h4>Harry</h4>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="assets/imgs/tony-llama.jpg" alt="Tony - CEO">
+                            
+                            <div class="bio-info">
+                                <h4>Tony</h4>
+                                <p>Chief Executive Officer</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <img src="assets/imgs/ronald-llama.jpg" alt="Ronald - Developer">
+                        
+                            <div class="bio-info">
+                                <h4>Ronald</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <img src="assets/imgs/stacy-llama.jpg" alt="Stacy - Web Designer">
+
+                            <div class="bio-info">
+                                <h4>Stacy</h4>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="media">
+            <div class="top-section slant-2"></div>
+             <div class="wrapper">
+                <div class="heading">
+                    <h3>were pretty famous.</h3>
+                </div>
+                    <article class="col">
+                        <div id="instafeed"></div>
                     </article>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-50-50">
+                        <div class="col">
+                            <h3>Connect</h3>
+                            <ul class="social-media">
+                                <li><a href="https://instagram.com/explore/tags/llamas/" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
+                                <li><a href="https://dribbble.com/search?q=llamas" target="_blank"><i class="ion-social-dribbble-outline"></i></a></li>
+                                <li><a href="https://twitter.com/search?q=llama&src=typd" target="_blank"><i class="ion-social-twitter-outline"></i></a></li>
+                                <li><a href="https://www.facebook.com/pages/Llamas/108586525839174?fref=ts" target="_blank"><i class="ion-social-facebook-outline"></i></a></li>
+                                <li><a href="https://plus.google.com/explore/Llama" target="_blank"><i class="ion-social-googleplus-outline"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <span class="copy">Llama Studios &copy; 2015</span>
+                        </div>
+                    </div>
+                </div>      
+            </div>      
+        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'tagged',
+                tagName: 'awesomellama',
+                sortBy: 'most-liked',
+                limit: 12,
+                template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+                clientId: '8d85cd878d734372a2f21862bcb35e07'
+            });
+            feed.run();
+
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    //Transform to class-names
+                    var target = '.' + this.hash.slice(1, this.hash.length);
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+
+                $('button').on('click', function () {
+                    $('nav ul').toggleClass('active');
+                    $('body').toggleClass('marginTop');
+                });
+            });
+        </script>
     </body>
 </html>
