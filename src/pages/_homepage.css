@@ -2,43 +2,95 @@
    Homepage Styles
    ========================================================================== */
 
+nav {
+    margin-top: -50px;
+
+    .logo {
+        text-decoration: none;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        h1 {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.4rem
+        }
+
+    }
+}
+
+
 .hero {
-    height: 30%;
-    height: 30vw;
+    height: 80%;
+    height: 70vw;
     max-height: 1000px;
     padding: 80px 0 200px;
 
-    background: url("../assets/imgs/llama-hs-lg.jpg");
+    background: url("../assets/imgs/llama-bg-lg.jpg") no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 
-    .green {
-        color: #3CB17D;
+    .hr-10 {
+        margin-bottom: 20px;
     }
-    
+
     .headlines {
-        
+        padding: 4em 0 0;
+
         h2 {
             color: #efefef;
             line-height: 1.1;
             letter-spacing: 1px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 0.55em;
+
+            .loud {
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            &.intro {
+                color: #B4FF9D;
+                font-size: 1.2em;
+                margin-bottom: 0.55em;
+            }
         }
 
         p {
             color: #d8d6d6;
-            letter-spacing: .118em;
+            letter-spacing: .038em;
+            font-style: italic;
+        }
+    }
+
+    @media (min-width: 600px) {
+        height: 35vw;
+    }
+
+    @media (--large-viewport) {
+        .headlines {
+            padding: 6em 0 0 0;
         }
     }
 }
 
 
-/* About us */
+/* 
+   About Us
+   ========================================================================== */
+
 .about-us {
-    background-color: $teal;
+    @extend .padding;
+    background-color: #fff;
     
     .heading {
         text-align: center;
-        margin-bottom: 2em;
+        margin-bottom: .5em;
         
         h3 {
             color: $cloud;
@@ -51,45 +103,144 @@
         }
     }
 
-    img {
-        height: 100%;
-        animation: levitate 3s ease infinite;
-        margin: 0 auto;
+
+    .top-section {
+        background-color: #fff;
     }
     
     .llama-wrap {
         margin: 0 auto;
         text-align: center;
+        
+        img {
+            height: 100%;
+            margin: 0 auto;
+            animation: levitate 3s ease infinite;
+        }
+
 
         .llama-shadow {
-            background: #4D6C71;
-            height: 9px;
             width: 89px;
-            border-radius: 100%;
+            height: 9px;
             margin: 35px auto;
             animation: shadow 3s ease infinite;
+            border-radius: 100%;
+            background: #cecece;
         }
+
     }
 
     .team-numbers {
         padding-top: 20px;
         margin-bottom: -calc($base*4);
-        border-bottom: 1px dotted $cloud;
+        border-top: 1px dotted #000;
 
-        .col:first-child {
-            border-left: 1px dotted $cloud;
+        .col {
+            padding: 20px 0;
+            text-align: center;
+            
+            &:first-child {
+                border-bottom: 1px dotted #000;
+            }
+        }
+
+        @media (--large-viewport) {
+            .col {
+                text-align: initial;
+
+                &:first-child {
+                    border-width: 0 1px 0 0;
+                }
+            }
+        }
+
+        img,
+        .stat-wrap {
+            display: inline-block;
+            text-align: center;
+        }
+
+        h2 {
         }
     }
 }
 
-.clients {
+
+/* 
+   Our Team 
+   ========================================================================== */
+.our-team {
+    @extend .padding;
+    background: url('../assets/imgs/giftly.png') repeat;
+    
+    .heading {
+        text-align: center; 
+        margin-bottom: 1em;
+    }
+    
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            width: 100%;
+        }
+
+        .member {
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: all .3s ease;
+
+            h4 {
+                font-size: 16px;
+                font-size: 0.9rem;
+                margin-bottom: 3px;
+            }
+        }
+
+        @media (--large-viewport) {
+            .member {
+                width: 33%;
+            }
+        }
+
+        .bio-info {
+            text-align: initial;
+        }
+    }
+}
+
+
+/* 
+   Social Media Portion
+   ========================================================================== */
+.media {
+    @extend .padding;
+    text-align: center;
     background-color: $cloud;
+    margin-top: 22px;
+
+    #instafeed {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            padding: 2px;
+        }
+    }
+
+    .top-section {
+        background-color: $cloud;
+    }
 
     h3 {
         color: $main-orange;
     }
 
     li {
-        color: #656565
+        color: #656565;
     }
 }

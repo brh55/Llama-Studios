@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+nav {
+    margin-top: -50px;
+
+    .logo {
+        text-decoration: none;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        h1 {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.4rem
+        }
+    }
+
+	.col:nth-child(2) {
+		top: 0;
+		left: 0;
+
+		button {
+			float: right;
+			border-radius: 5px;
+			border: 2px solid;
+			color: $main-orange;
+			background: transparent;
+			text-transform: uppercase;
+			font-family: $font-headings;
+			margin-top: -48px;
+			padding: 0 15px;
+			transition: .4s ease;
+
+			&:hover,
+			&:focus {
+				color: #8E502D;
+			}
+		}
+
+		ul {
+	    	padding: 0;
+	    	text-align: right;
+	    	height: 0;
+	    	width: 100%;
+	    	position: absolute;
+	    	left: 0;
+	    	top: 0;
+	    	margin-top: -184px;
+	    	transition: margin .4s ease;
+
+	    	li {
+	    		list-style-type: none;
+				margin: 0;
+				padding: 8px;
+				font-family: arial;
+				width: 100%;
+				text-align: center;
+				background-color: white;
+				border-bottom: 1px dotted #E0E0E0;
+			}
+
+			a {
+				color: #58646d;
+				transition: color .3s ease;
+
+				&:hover,
+				&:focus {
+					color: #6f4c41;
+				}
+			}
+	    }
+	}
+
+	@media (--large-viewport) {
+		.col:nth-child(2) {
+			height: initial;
+
+			button {
+				display: none;
+			}
+
+			ul {
+				position: relative;
+		    	padding: 0;
+		    	margin: 0;
+		    	text-align: right;
+		    	height: 0;
+
+		    	li {
+		    		background-color: initial;
+					width: initial;
+					display: inline-block;
+					border-bottom: none;
+    				padding: 5px;
+    				margin: 0 8px;
+    				font-size: 15px;
+    				text-transform: uppercase;
+    				transition: border-bottom .4s ease;
+
+    				&:hover,
+    				&:focus {
+    					border-bottom: 2px solid $main-orange;
+    				}
+
+    				a {
+    					color: $main-orange;
+
+    					&:hover,
+    					&:focus {
+    						color: $main-orange;
+    					}
+    				}
+		    	}
+			}
+    	}
+    }
+}
+
+/* Hambuger classes to toggle */
+.active {
+	margin-top: 0 !important; /* important declared to avoid inline and due to high specificity of initial classes */
+	height: initial;
+}
+
+/* Must find better way */
+.marginTop {
+	margin-top: 184px;
+}

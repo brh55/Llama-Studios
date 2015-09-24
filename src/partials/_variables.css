@@ -14,9 +14,18 @@ $dark-green: #8cb210;
 
 $teal: #719DA5;
 $cloud: #efefef;
+$font-grey: #797979;
 
-$font-headings: 'Arimo', sans-serif;
-$font-paragraph: 'Pontano Sans', sans-serif;
+$font-headings: 'Open Sans', sans-serif;
+$font-paragraph: 'Gentium Basic', serif;
 
 /* Sizing */
 $base: 10px;
+
+
+/* 
+   Media Queries Related
+   ========================================================================== */
+
+@custom-media --small-viewport (max-width: 640px);
+@custom-media --large-viewport (min-width: 800px);

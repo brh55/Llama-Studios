@@ -4,6 +4,11 @@
    Main base of styles
    ========================================================================== */
 
+body {
+	overflow-x: hidden;
+	transition: margin .4s ease;
+}
+
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -12,4 +17,38 @@ img {
 /* Utilities */
 .padding {
 	padding: calc($base * 8) 0;
+}
+
+@for $i from 10 to 80 by 10 {
+	.hr-$(i) {
+		background-color: #b4ff9d;
+		border: 0;
+		height: 3px;
+		width: $(i)%;
+	}
+}
+
+
+/* Slanting Layouts */
+@for $i from 1 to 4 {
+	.slant-$(i) {
+		transform: rotate($(i)deg);
+	}
+}
+
+@for $i from 1 to 4 {
+	.slant--$(i) {
+		transform: rotate(-$(i)deg);
+	}
+}
+
+.top-section {
+    position: absolute;
+    z-index: 2;
+
+    width: 102%;
+    height: 72px;
+    margin-top: -125px;
+
+    background-color: #fff;
 }

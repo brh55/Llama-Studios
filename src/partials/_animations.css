@@ -21,14 +21,14 @@
 @keyframes shadow {
 	from {
 		width: 89px;
-		background-color: #4D6C71;
+		background-color: #CECECE;
 	}
 	72% {
-		background-color: #2B4246;
+		background-color: #7B7B7B;
 		width: 76px;
 	}
 	to {
 		width: 89px;
-		background-color: #4D6C71;
+		background-color: #CECECE;
 	}
 }

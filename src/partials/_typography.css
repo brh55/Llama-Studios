@@ -4,7 +4,7 @@
    Adjustments on top of typeplate
    ========================================================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,700|Pontano+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Gentium+Basic);
 
 h1,
 h2,
@@ -13,10 +13,19 @@ h4,
 h5,
 h6 {
 	font-family: $font-headings;
+	color: $font-grey;
 }
 
 p,
-li,
-span {
+li {
 	font-family: $font-paragraph;
+	color: $font-grey;
+}
+
+.logo {
+	font-family: 'Megrim', Georgia, serif;
+}
+
+a {
+	text-decoration: none;
 }

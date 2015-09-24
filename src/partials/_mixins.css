@@ -8,12 +8,13 @@
 @define-mixin colSet $1st-width, $2nd-width {
 	&-$(1st-width)-$(2nd-width) {
 		display: flex;
+		width: 100%;
 		
 		.col {
-			width: $(2nd-width)%;
+			width: $(1st-width)%;
 		
 			+.col {
-				width: $(1st-width)%;
+				width: $(2nd-width)%;
 			}
 		}
 	}
@@ -28,6 +29,7 @@
 @define-mixin set100 $1st-width, $2nd-width {
 	&-$(1st-width)-$(2nd-width) {
 		display: block;
+		width: 100%;
 		
 		.col {
 			display: block;

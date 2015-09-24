@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	padding: calc($base * 4) 0;
+	background-color: #404C5C;
+
+	h3 {
+		color: $main-orange;
+		border-bottom: 1px solid;
+		padding: 0 5px 8px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		display: inline-block;
+
+		i {
+			color: #fff;
+			font-size: 2em;
+			margin: 9px;
+			transition: color .4s ease;
+
+			&:hover,
+			&:focus {
+				color: #A0958D;
+			}
+		}
+
+		&:first-child i {
+			margin-left: 0;
+		}
+	}
+
+	.copy {
+		font-family: $font-paragraph;
+		color: #fff;
+	}
+
+}
