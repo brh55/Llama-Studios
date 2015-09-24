@@ -8,37 +8,71 @@ footer {
 
 	h3 {
 		color: $main-orange;
-		border-bottom: 1px solid;
+		border-bottom: 1px dotted;
 		padding: 0 5px 8px;
 	}
 
 	ul {
 		padding-left: 0;
+		list-style-type: none;
 	}
 
-	li {
-		display: inline-block;
+	.social-media {
+		li {
+			display: inline-block;
 
-		i {
+			i {
+				color: #fff;
+				font-size: 2em;
+				margin: 9px;
+				transition: color .4s ease;
+
+				&:hover,
+				&:focus {
+					color: #A0958D;
+				}
+			}
+
+			&:first-child i {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.contact-info {
+		text-align: right;
+
+		.location {
+			margin-top: 0;
+		}
+
+		a {
 			color: #fff;
-			font-size: 2em;
-			margin: 9px;
 			transition: color .4s ease;
 
-			&:hover,
-			&:focus {
+			&:focus,
+			&:hover {
 				color: #A0958D;
 			}
 		}
 
-		&:first-child i {
-			margin-left: 0;
+		li {
+			color: #fff;
+			padding-top: 5px;
+
+			&:first-child {
+				border-bottom: 1px dotted $main-orange;
+				padding-bottom: 5px;
+			}
 		}
-	}
 
-	.copy {
-		font-family: $font-paragraph;
-		color: #fff;
-	}
+		address {
+			font-size: 15px;
+		}
+		.copy {
+			font-family: $font-paragraph;
+			color: #fff;
+		}
 
+	}
 }
