@@ -61,7 +61,6 @@ footer {
 			padding-top: 5px;
 
 			&:first-child {
-				border-bottom: 1px dotted $main-orange;
 				padding-bottom: 5px;
 			}
 		}

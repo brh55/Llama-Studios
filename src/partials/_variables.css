@@ -7,14 +7,17 @@
 /** Color Scheme **/
 $main-orange: #ff7f37;
 $main-blue: #0a6cff;
-$main-green: #a2cc1d;
+$main-green: #83ef78;
 
-$dark-blue: #1956b2;
+$dark-blue: #5a7c98;
 $dark-green: #8cb210;
 
-$teal: #719DA5;
+$teal: #719da5;
 $cloud: #efefef;
+$light-clouds: #f9f9f9;
+$hint-clouds: #f5f5f5;
 $font-grey: #797979;
+
 
 $font-headings: 'Open Sans', sans-serif;
 $font-paragraph: 'Gentium Basic', serif;
