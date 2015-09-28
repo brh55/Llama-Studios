@@ -27,7 +27,7 @@ nav {
 .hero {
     height: 80%;
     height: 70vw;
-    max-height: 1000px;
+    max-height: 600px;
     padding: 80px 0 200px;
 
     background: url("../assets/imgs/llama-bg-lg.jpg") no-repeat fixed;
