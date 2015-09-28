@@ -7,10 +7,12 @@ First 'llama' tell you that if you've stumbled across this page in hopes to find
 ## Disclaimer
 Llamas in the photos were all treated under the fair treatments outlined by "Llama vs Buffalo" case.
 
-## How to get things spinning
+## How to get things spinning for development
 1. clone this repo: `git clone https://github.com/brh55/Llama-Studios.git`
 2. cd to repo: `cd llama-studios`
-3. run web server: `gulp`
+3. run build: `gulp`
 4. now your browser should have it up and running (can I get a "yay 4 hay!")
+### For Production
+5. run web server: `node index.js`
 
 ### Keep llama-ing on! ![Llama on](http://orig05.deviantart.net/fee3/f/2010/094/f/d/llama_walk_by_taquito143.gif)
