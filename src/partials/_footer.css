@@ -6,11 +6,13 @@ footer {
 	padding: calc($base * 4) 0;
 	background-color: #404C5C;
 
-	h3 {
-		color: $main-orange;
-		border-bottom: 1px dotted;
-		padding: 0 5px 8px;
+    h3 {
+    	padding: 0 5px 8px;
+
+    	color: $main-orange;
+    	border-bottom: 1px dotted;
 	}
+
 
 	ul {
 		padding-left: 0;
