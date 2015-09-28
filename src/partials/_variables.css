@@ -24,6 +24,8 @@ $font-paragraph: 'Gentium Basic', Georgia, serif;
 
 /* Sizing */
 $base: 10px;
+$base-md: calc($base*2);
+$base-lg: calc($base*3);
 
 
 /* 

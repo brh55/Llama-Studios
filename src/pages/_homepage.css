@@ -170,6 +170,49 @@ nav {
 /* 
    Our Projects 
    ========================================================================== */
+.history {
+    @extend .padding;
+    background-color: $dark-blue;
+
+    .wrapper {
+        padding-top: 3em;
+        padding-bottom: 3em
+    }
+
+    
+    h3,
+    p {
+        color: #fff;
+    }
+    
+    img {
+        display: block;
+        margin: $base-lg auto;
+        max-width: 200px;
+        border-radius: 300px;
+    }
+
+    @media (--large-viewport) {
+        .col:nth-child(2) {
+            text-align: right;
+            padding-left: $base-lg;
+        }
+
+        .heading {
+            text-align: right;
+        }
+
+        img {
+            margin: initial;
+            max-width: 100%;
+        }
+
+    }
+}
+
+/* 
+   Our Projects 
+   ========================================================================== */
 .projects {
     @extend .padding;
     background-color: #fff;
@@ -179,7 +222,8 @@ nav {
     }
 
     .top-section {
-        border-bottom: 1px solid $hint-clouds;
+        border-top: 1px solid $hint-clouds;
+        background-color: #fff;
     }
     
     .examples {
@@ -304,6 +348,7 @@ nav {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        margin-top: $base-lg;
 
         a {
             padding: 0 4px;
