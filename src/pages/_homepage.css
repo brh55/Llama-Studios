@@ -2,32 +2,6 @@
    Homepage Styles
    ========================================================================== */
 
-nav {
-    margin-top: -50px;
-
-    .logo {
-        text-decoration: none;
-
-        img {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        
-        h1 {
-            color: #fff;
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 1.4em;
-
-            @media (--xsmall-viewport) {
-                font-size: 1em;        
-            }
-        }
-
-    }
-}
-
-
 .hero {
     height: 80%;
     height: 70vw;
@@ -78,6 +52,10 @@ nav {
             color: #d8d6d6;
             letter-spacing: .038em;
             font-style: italic;
+
+            @media (--xsmall-viewport) {
+                color: #fff;
+            }
         }
     }
 
