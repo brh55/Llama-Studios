@@ -17,7 +17,11 @@ nav {
             color: #fff;
             display: inline-block;
             vertical-align: middle;
-            font-size: 1.4rem
+            font-size: 1.4em;
+
+            @media (--xsmall-viewport) {
+                font-size: 1em;        
+            }
         }
 
     }
@@ -41,6 +45,10 @@ nav {
     .headlines {
         padding: 4em 0 0;
 
+        @media (--large-viewport) {
+            padding: 6em 0 0 0;
+        }
+
         h2 {
             color: #efefef;
             line-height: 1.1;
@@ -49,6 +57,10 @@ nav {
             text-transform: uppercase;
             font-size: 40px;
             margin-bottom: 0.55em;
+
+            @media (--xsmall-viewport) {
+                font-size: 30px;
+            }
 
             .loud {
                 font-weight: bold;
@@ -71,12 +83,6 @@ nav {
 
     @media (min-width: 600px) {
         height: 35vw;
-    }
-
-    @media (--large-viewport) {
-        .headlines {
-            padding: 6em 0 0 0;
-        }
     }
 }
 
@@ -256,8 +262,6 @@ nav {
 }
 
 
-
-
 /* 
    Our Team 
    ========================================================================== */
@@ -332,6 +336,10 @@ nav {
         padding: 0.5em 0;
         color: #fff;
         line-height: 1.3;
+
+        @media (--xsmall-viewport) {
+            font-size: 2em;
+        }
     }
 }
 

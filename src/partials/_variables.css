@@ -34,3 +34,4 @@ $base-lg: calc($base*3);
 
 @custom-media --small-viewport (max-width: 640px);
 @custom-media --large-viewport (min-width: 800px);
+@custom-media --xsmall-viewport (max-width: 500px);
