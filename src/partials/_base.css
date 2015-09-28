@@ -52,3 +52,9 @@ img {
 
     background-color: $light-clouds;
 }
+
+@media (min-width: 1500px) {
+	.top-section {
+		display: none;
+	}
+}

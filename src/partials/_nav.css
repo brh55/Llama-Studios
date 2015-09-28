@@ -30,12 +30,12 @@ nav {
 			border-radius: 5px;
 			border: 2px solid;
 			color: $main-orange;
-			background: transparent;
+			background-color: transparent;
 			text-transform: uppercase;
 			font-family: $font-headings;
 			margin-top: -48px;
 			padding: 0 15px;
-			transition: .4s ease;
+			transition: l.4s ease;
 
 			&:hover,
 			&:focus {
@@ -129,7 +129,7 @@ nav {
 	height: initial;
 }
 
-/* Must find better way */
+/* TODO: Must find better way */
 .marginTop {
 	margin-top: 184px;
 }
