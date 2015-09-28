@@ -63,6 +63,7 @@ nav {
 				text-align: center;
 				background-color: white;
 				border-bottom: 1px dotted #E0E0E0;
+				box-sizing: border-box;
 			}
 
 			a {
