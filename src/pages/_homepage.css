@@ -90,8 +90,8 @@ nav {
     background-color: $light-clouds;
     
     .heading {
-        text-align: center;
-        margin-bottom: .5em;
+        text-align: left;
+        margin-bottom: $base;
         
         h3 {
             color: $dark-blue;
@@ -168,14 +168,46 @@ nav {
 }
 
 /* 
-   Our Team 
+   Our Projects 
    ========================================================================== */
 .projects {
     @extend .padding;
     background-color: #fff;
 
+    h3 {
+        color: $main-orange;
+    }
+
     .top-section {
         border-bottom: 1px solid $hint-clouds;
+    }
+    
+    .examples {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .one-project {
+        border: 1px solid #efefef;
+        width: 100%;
+        margin-bottom: 2em;
+
+        h4 {
+            padding-bottom: $base;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .information {
+            padding: 10px;
+        }
+    }
+
+    @media (--large-viewport) {
+        .one-project {
+            width: 31%;
+        }
+
     }
 }
 
@@ -187,8 +219,8 @@ nav {
    ========================================================================== */
 .our-team {
     @extend .padding;
-    background-color: $light-cloud;
-    
+    background-color: $light-clouds; 
+
     .heading {
         text-align: center; 
         margin-bottom: 1em;
@@ -196,7 +228,7 @@ nav {
     
     .top-section {
         border-top: 1px solid $hint-clouds;
-        background-color: $light-cloud;
+        background-color: $light-clouds;
     }
 
     .team {
@@ -217,7 +249,7 @@ nav {
             h4 {
                 font-size: 16px;
                 font-size: 0.9rem;
-                margin-bottom: 3px;
+                margin-bottom: 5px;
             }
         }
 
@@ -229,7 +261,7 @@ nav {
 
         .bio-info {
             text-align: initial;
-            font-size: 0.7em;
+            font-size: .85em;
             letter-spacing: 2px;
         }
     }
@@ -244,7 +276,8 @@ nav {
     background-color: $main-orange;
     
     .top-section {
-        background-color: #fff;
+        background-color: $light-clouds;
+        border-bottom: 1px solid #d8733a;
     }
 
     span {
@@ -273,7 +306,7 @@ nav {
         flex-wrap: wrap;
 
         a {
-            padding: 2px;
+            padding: 0 4px;
         }
     }
 
@@ -283,6 +316,7 @@ nav {
 
     h3 {
         color: $main-orange;
+        margin-bottom: $base;
     }
 
     li {

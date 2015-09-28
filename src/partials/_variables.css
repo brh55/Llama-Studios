@@ -19,8 +19,8 @@ $hint-clouds: #f5f5f5;
 $font-grey: #797979;
 
 
-$font-headings: 'Open Sans', sans-serif;
-$font-paragraph: 'Gentium Basic', serif;
+$font-headings: Arial, sans-serif;
+$font-paragraph: 'Gentium Basic', Georgia, serif;
 
 /* Sizing */
 $base: 10px;
