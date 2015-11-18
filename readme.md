@@ -18,3 +18,11 @@ Llamas in the photos were all treated under the fair treatments outlined by "Lla
 5. run web server: `node index.js`
 
 ### Keep llama-ing on! ![Llama on](http://orig05.deviantart.net/fee3/f/2010/094/f/d/llama_walk_by_taquito143.gif)
+
+---
+    This was for the Zappos challenge for 2016. But, I encourage you to inspect the code, use some of it for
+    your projects, and learn from it as well. It's no means a reflection of what is expected, 
+    one must find it within themselves to create their vision of llama history. ;)
+    
+    If this was also useful, go ahead and star it to spread the love. You are more than welcome to ask me questions 
+    in the issue section as well, I'll respond!
