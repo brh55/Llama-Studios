@@ -1,6 +1,6 @@
 # Llama Studio
-[![Build Status](https://travis-ci.org/brh55/Llama-Studios.svg)](https://travis-ci.org/brh55/Llama-Studios)
-[![devDendencies Status](https://david-dm.org/brh55/Llama-Studios/dev-status.svg)](https://david-dm.org/brh55/Llama-Studios#info=devDependencies)
+[![Build Status](https://travis-ci.org/brh55/Zappos-Internship-Challenge-AMA.svg)](https://travis-ci.org/brh55/Llama-Studios)
+[![devDendencies Status](https://david-dm.org/brh55/Zappos-Internship-Challenge-AMA/dev-status.svg)](https://david-dm.org/brh55/Llama-Studios#info=devDependencies)
 ![Llama Friendly](https://img.shields.io/badge/llama-friendly-33d6ff.svg)
 
 First 'llama' tell you that if you've stumbled across this page in hopes to find something boring, then you'll be quite disappointed. Because quite frankly, you've just stumbled upon one of the best development studios in Llama history, no wait MAJESTIC History.
@@ -9,7 +9,7 @@ First 'llama' tell you that if you've stumbled across this page in hopes to find
 Llamas in the photos were all treated under the fair treatments outlined by "Llama vs Buffalo" case.
 
 ## How to get things spinning for development
-1. clone this repo: `git clone https://github.com/brh55/Llama-Studios.git`
+1. clone this repo: `git clone https://github.com/brh55/Zappos-Internship-Challenge-AMA.git`
 2. cd to repo: `cd llama-studios`
 3. run build: `gulp`
 4. now your browser should have it up and running (can I get a "yay 4 hay!")
