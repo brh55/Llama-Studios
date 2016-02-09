@@ -17,17 +17,24 @@ Llamas in the photos were all treated under the fair treatments outlined by "Lla
 ### For Production
 5. run web server: `node index.js`
 
+### About this project
+1. No frameworks were used other than jQuery for simple navigation functionality.
+2. The CSS framework and customize styles are written in scratch with PostCSS (not necessary, just a fun challenge)
+3. Automated Gulp task optimizes and minifies the code into a nice fat blob.
+
 ### Keep llama-ing on! ![Llama on](http://orig05.deviantart.net/fee3/f/2010/094/f/d/llama_walk_by_taquito143.gif)
 
 ---
-    This was for the Zappos front-end internship challenge for 2016. I'm leaving this code FOSS, I encourage
-    you to inspect the code, use some of it for your projects, and learn from it as well.
+    This was for the Zappos front-end internship challenge for 2016. I'm leaving this code FOSS,
+    I encourage you to inspect the code, use some of it for your projects, and learn from it as well.
     It's no means a reflection of what is expected, but more so a reference or baseline for your projects.
     "One must find it within themselves to create their vision of llama history! :)"
     
-    If this was also useful, go ahead and star it to spread the love. You are more than welcome to ask me questions 
-    in the issue section as well, I'll respond!
+    If this was also useful, go ahead and star it to spread the love. You are more than welcome to 
+    ask me questions in the issue section or tweet me at @HimBrandon as well, I'll respond!
+    
     If you are curious, I did move into the on-site interview, but unfortunately did not make the 
-    final cut. However, I absolutely encourage you to still try apply for Zappos internship, and
-    take advantage of meeting the other canidates! I'm still good friends with a few of the pople
-    I met on my interview.
+    final cut. However, I absolutely encourage you to apply for the Zappos internship, as it was an
+    amazing and awesome experience. The team is very talented, and the fellow canidates I met are people
+    I still speak to until this day.
+---
