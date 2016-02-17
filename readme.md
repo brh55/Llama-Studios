@@ -24,6 +24,10 @@ Llamas in the photos were all treated under the fair treatments outlined by "Lla
 
 ### Keep llama-ing on! ![Llama on](http://orig05.deviantart.net/fee3/f/2010/094/f/d/llama_walk_by_taquito143.gif)
 
+## AMA
+If you have a question about the process or want to get insights, submit an [issue](https://github.com/brh55/Zappos-Internship-Challenge-AMA/issues), I'll respond to you when ever I get a chance.
+
+
 ---
     This was for the Zappos front-end internship challenge for 2016. I'm leaving this code FOSS,
     I encourage you to inspect the code, use some of it for your projects, and learn from it as well.
